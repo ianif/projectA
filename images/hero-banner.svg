@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+    <defs>
+        <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#16a085;stop-opacity:0.3" />
+            <stop offset="100%" style="stop-color:#0f3460;stop-opacity:0.3" />
+        </linearGradient>
+    </defs>
+    <rect width="1200" height="600" fill="#e8f1f5"/>
+    <rect width="1200" height="600" fill="url(#heroGrad)"/>
+    <circle cx="300" cy="150" r="80" fill="#16a085" opacity="0.2"/>
+    <circle cx="900" cy="450" r="120" fill="#0f3460" opacity="0.1"/>
+    <path d="M 200 400 Q 300 300 400 400 T 600 400" stroke="#16a085" stroke-width="2" fill="none" opacity="0.3"/>
+    <text x="600" y="250" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="#0f3460">Ιατρική Φροντίδα</text>
+    <text x="600" y="300" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#16a085">Με Ειδίκευση</text>
+    <rect x="100" y="350" width="1000" height="3" fill="#16a085" opacity="0.5"/>
+</svg>

@@ -1,0 +1,428 @@
+================================================================================
+    ΚΛΙΝΙΚΗ ΓΥΝΑΙΚΟΛΟΓΙΑΣ - GYNECOLOGIST WEBSITE
+    Setup and Execution Instructions
+================================================================================
+
+TABLE OF CONTENTS
+1. System Requirements
+2. Project Overview
+3. File Structure
+4. Installation & Setup
+5. Running the Website Locally
+6. Compilation (if needed)
+7. Testing & Validation
+8. Performance Benchmarking
+9. Troubleshooting
+10. Additional Notes
+
+================================================================================
+1. SYSTEM REQUIREMENTS
+================================================================================
+
+HARDWARE:
+- Minimum 512MB RAM
+- At least 100MB disk space
+- Any modern processor
+
+SOFTWARE:
+- No special software required for basic execution
+- Web browser: Chrome, Firefox, Safari, Edge (latest versions)
+- Optional: Python 3.6+ (for running a local HTTP server or scripts)
+- Optional: Node.js (if using advanced development tools)
+
+SUPPORTED BROWSERS:
+- Google Chrome 90+
+- Mozilla Firefox 88+
+- Safari 14+
+- Microsoft Edge 90+
+- Opera 76+
+
+INTERNET:
+- No internet required to run locally
+- Website is fully self-contained
+- All resources are local files
+
+================================================================================
+2. PROJECT OVERVIEW
+================================================================================
+
+This is a professional gynecologist clinic website with the following features:
+- Responsive design (works on desktop, tablet, mobile)
+- Complete in Greek language
+- Four main sections:
+  * Αρχική (Homepage) - Welcome and hero section
+  * Βιογραφικό (Biography) - Doctor profile and credentials
+  * Υπηρεσίες (Services) - Medical services offered
+  * Επικοινωνία (Contact) - Contact form and information
+
+Technology Stack:
+- HTML5 (semantic markup)
+- CSS3 (responsive design, gradients, animations)
+- Vanilla JavaScript (no external dependencies)
+- SVG Images (scalable vector graphics)
+
+================================================================================
+3. FILE STRUCTURE
+================================================================================
+
+gynecologist-website/
+├── index.html                 # Main HTML file (all pages in one)
+├── styles.css                 # CSS styling
+├── script.js                  # JavaScript functionality
+├── generate_images.py         # Python script to generate placeholder images
+├── test_website.py            # Testing and benchmarking script
+├── SETUP_INSTRUCTIONS.txt     # This file
+├── README.md                  # Project documentation
+└── images/                    # Image directory
+    ├── logo.svg              # Clinic logo
+    ├── hero-banner.svg       # Hero section banner
+    ├── doctor-profile.svg    # Doctor profile image
+    ├── service-1.svg         # Service 1 icon
+    ├── service-2.svg         # Service 2 icon
+    ├── service-3.svg         # Service 3 icon
+    └── service-4.svg         # Service 4 icon
+
+All images are SVG format (scalable vector graphics).
+
+================================================================================
+4. INSTALLATION & SETUP
+================================================================================
+
+STEP 1: Download/Extract the Project
+--------------------------------------
+1. Extract the project folder to your desired location
+   Example: C:\Users\YourName\Desktop\gynecologist-website
+   Example: /home/username/Documents/gynecologist-website
+   Example: /Users/username/Documents/gynecologist-website
+
+2. Ensure all files are present:
+   - index.html
+   - styles.css
+   - script.js
+   - generate_images.py
+   - test_website.py
+   - SETUP_INSTRUCTIONS.txt
+   - README.md
+   - images/ folder with SVG files
+
+STEP 2: Verify Image Files (Optional)
+--------------------------------------
+If SVG images are missing, regenerate them using Python:
+
+For Windows:
+  1. Open Command Prompt in the project directory
+  2. Run: python generate_images.py
+  3. Wait for completion message
+
+For macOS/Linux:
+  1. Open Terminal in the project directory
+  2. Run: python3 generate_images.py
+  3. Wait for completion message
+
+The script will create all necessary SVG image files in the images/ folder.
+
+STEP 3: No Further Installation Required
+-----------------------------------------
+The website is ready to use! No npm, pip, or other package installation needed.
+
+================================================================================
+5. RUNNING THE WEBSITE LOCALLY
+================================================================================
+
+OPTION A: Using Python (Recommended - Easiest)
+-----------------------------------------------
+
+For Windows:
+1. Open Command Prompt (cmd.exe)
+2. Navigate to the project folder:
+   cd C:\path\to\gynecologist-website
+3. For Python 3.6+, run:
+   python -m http.server 8000
+4. Open your browser and visit: http://localhost:8000
+5. You should see the clinic website
+
+For macOS/Linux:
+1. Open Terminal
+2. Navigate to the project folder:
+   cd /path/to/gynecologist-website
+3. For Python 3.6+, run:
+   python3 -m http.server 8000
+4. Open your browser and visit: http://localhost:8000
+5. You should see the clinic website
+
+OPTION B: Using Node.js (if installed)
+---------------------------------------
+1. Open Terminal/Command Prompt
+2. Navigate to the project folder
+3. Run: npx http-server
+4. Open browser to: http://localhost:8080
+
+OPTION C: Using Live Server (VSCode extension)
+-----------------------------------------------
+1. Install VSCode
+2. Install "Live Server" extension (by Ritwick Dey)
+3. Right-click index.html
+4. Select "Open with Live Server"
+5. Website opens automatically
+
+OPTION D: Using Your Browser Directly (Limited functionality)
+--------------------------------------------------------------
+1. Open file manager
+2. Navigate to the project folder
+3. Right-click on index.html
+4. Select "Open with" → your web browser
+5. Note: Some JavaScript features may not work due to CORS restrictions
+
+IMPORTANT: Recommended Method
+The Python HTTP server (Option A) is recommended for full functionality.
+
+================================================================================
+6. COMPILATION (NOT REQUIRED)
+================================================================================
+
+No compilation is necessary!
+
+This is a web application that runs directly in your browser:
+- HTML5 is interpreted by the browser
+- CSS3 is processed natively
+- JavaScript is executed by the browser's JavaScript engine
+- SVG images are rendered natively
+
+If you want to minify files for production:
+
+Minify CSS (using online tools or command-line):
+- cssnano
+- cleancss
+
+Minify JavaScript:
+- terser
+- uglify-js
+
+Example with Node.js:
+  npm install -g terser cleancss-cli
+  cleancss styles.css > styles.min.css
+  terser script.js > script.min.js
+
+Then update index.html to use the minified versions.
+
+================================================================================
+7. TESTING & VALIDATION
+================================================================================
+
+AUTOMATED TESTING:
+If Python is installed, run the test suite:
+
+For Windows:
+  python test_website.py
+
+For macOS/Linux:
+  python3 test_website.py
+
+This will check:
+- File existence and integrity
+- HTML validity
+- CSS syntax
+- JavaScript syntax
+- Image file accessibility
+- Form validation
+- Performance metrics
+
+MANUAL TESTING CHECKLIST:
+□ Homepage loads correctly
+□ Navigation menu works on desktop
+□ Mobile menu toggle works on small screens
+□ All links navigate correctly
+□ Contact form validates inputs
+□ Contact form shows success message
+□ Images load properly
+□ Responsive design works at different screen sizes
+□ Colors and styling are correct
+□ Greek text displays correctly
+□ No console errors in browser dev tools
+
+BROWSER TESTING:
+1. Open DevTools (F12 or Cmd+Option+I)
+2. Check Console tab for errors
+3. Test on multiple browsers:
+   - Chrome/Chromium
+   - Firefox
+   - Safari (macOS)
+   - Edge
+
+RESPONSIVE TESTING:
+1. Press F12 to open DevTools
+2. Click Device Toolbar icon (Ctrl+Shift+M or Cmd+Shift+M)
+3. Test at breakpoints:
+   - Mobile: 375px
+   - Tablet: 768px
+   - Desktop: 1200px+
+
+================================================================================
+8. PERFORMANCE BENCHMARKING
+================================================================================
+
+BUILT-IN PERFORMANCE MONITORING:
+1. Run the website (see Section 5)
+2. Open browser DevTools (F12)
+3. Go to Console tab
+4. Look for performance metrics logged
+5. Check Network tab for load times
+
+DETAILED BENCHMARKING WITH PYTHON:
+Run the test_website.py script:
+
+For Windows:
+  python test_website.py --benchmark
+
+For macOS/Linux:
+  python3 test_website.py --benchmark
+
+This measures:
+- Page load time
+- CSS parsing time
+- JavaScript execution time
+- Image loading time
+- Total resource size
+
+LIGHTHOUSE AUDIT (Recommended):
+1. Open Chrome DevTools (F12)
+2. Click Lighthouse tab
+3. Select "Generate report"
+4. Review performance metrics
+5. Check accessibility score
+6. Review SEO recommendations
+
+TARGET METRICS:
+- First Contentful Paint (FCP): < 1.5s
+- Largest Contentful Paint (LCP): < 2.5s
+- Cumulative Layout Shift (CLS): < 0.1
+- Overall page size: < 500KB
+- Image size: < 200KB total
+
+================================================================================
+9. TROUBLESHOOTING
+================================================================================
+
+PROBLEM: "HTTP 404 - Not Found" error
+SOLUTION:
+- Verify you're in the correct project directory
+- Ensure all files are present
+- Try a different port: python -m http.server 9000
+- Clear browser cache (Ctrl+Shift+Delete)
+
+PROBLEM: Images not loading
+SOLUTION:
+- Verify images/ folder exists
+- Regenerate images: python generate_images.py
+- Check browser console (F12) for error messages
+- Ensure image file extensions are correct (.svg)
+
+PROBLEM: Form doesn't submit
+SOLUTION:
+- Check browser console for JavaScript errors (F12)
+- Ensure JavaScript is enabled
+- Try a different browser
+- Clear browser cache and cookies
+
+PROBLEM: Styling looks broken
+SOLUTION:
+- Press F5 to refresh page
+- Press Ctrl+Shift+Delete to clear cache
+- Try a different browser
+- Check if all CSS rules loaded in DevTools
+
+PROBLEM: Greek text appears as squares/symbols
+SOLUTION:
+- Verify UTF-8 encoding in browser (View → Encoding → UTF-8)
+- Check HTML meta charset tag: <meta charset="UTF-8">
+- Update browser to latest version
+- Try a different browser
+
+PROBLEM: Website doesn't respond to clicks
+SOLUTION:
+- Check if JavaScript is enabled (Settings → Privacy → JavaScript)
+- Verify script.js loads (DevTools → Console)
+- Try clearing browser cache
+- Restart browser
+
+PROBLEM: "Address already in use" error
+SOLUTION:
+- Port 8000 is already running something
+- Try different port: python -m http.server 9000
+- Visit: http://localhost:9000
+- Or kill existing process using port 8000
+
+PROBLEM: Cannot find Python
+SOLUTION:
+- Verify Python is installed: python --version
+- If not installed, download from python.org
+- Make sure "Add Python to PATH" was checked during installation
+- Use full path: C:\Python\python.exe -m http.server
+
+GENERAL TIPS:
+1. Always check browser console (F12) for errors
+2. Try incognito/private browsing mode
+3. Disable browser extensions temporarily
+4. Try a different browser
+5. Restart your computer if needed
+
+================================================================================
+10. ADDITIONAL NOTES
+================================================================================
+
+BROWSER COMPATIBILITY:
+- Tested on Chrome 90+, Firefox 88+, Safari 14+, Edge 90+
+- Mobile browsers: iOS Safari, Chrome Mobile
+- Fallbacks included for older browsers
+
+ACCESSIBILITY:
+- ARIA labels for screen readers
+- Semantic HTML5 markup
+- Keyboard navigation support
+- Color contrast meets WCAG standards
+
+PERFORMANCE OPTIMIZATIONS:
+- SVG images (small file size, scalable)
+- CSS3 animations (hardware accelerated)
+- Lazy loading considerations for future
+- Minimal JavaScript (vanilla, no frameworks)
+
+SECURITY NOTES:
+- No sensitive data stored
+- Contact form data stored locally only
+- No external API calls
+- HTTPS not required for local testing
+
+FUTURE ENHANCEMENTS:
+- Add appointment booking system
+- Integrate email notifications
+- Add patient portal
+- Implement multi-language support
+- Add testimonials section
+- SEO optimization
+- Social media integration
+
+CONTACT INFORMATION IN WEBSITE:
+Phone: +30 210 123 45 67
+Email: info@gyneclinic.gr
+Address: Οδός Ιατρική 123, 151 24, Αθήνα
+
+These are sample values. Update them in index.html for your actual clinic.
+
+================================================================================
+QUICK START SUMMARY
+================================================================================
+
+1. Extract project files
+2. Open Terminal/Command Prompt
+3. Navigate to project folder
+4. Run: python -m http.server 8000 (or python3 on macOS/Linux)
+5. Open browser: http://localhost:8000
+6. Done! Website is live
+
+For detailed help with any step, refer to the relevant section above.
+
+================================================================================
+Last Updated: 2024
+Version: 1.0
+================================================================================
