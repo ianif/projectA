@@ -1,8 +1,8 @@
-# Κλινική Γυναικολογίας - Gynecologist Website
+# Dr. Stylianos Kourletakis - Gynecologist Website
 
 ## Overview
 
-A complete, professional gynecologist clinic website built with modern web technologies. The site is fully responsive, accessible, and designed specifically for a gynecology medical practice. All content is in Greek.
+A complete, professional website for Dr. Stylianos Kourletakis, a specialized gynecologist. The site is fully responsive, accessible, and designed specifically for a gynecology medical practice. All content is in Greek.
 
 **Live Demo Features:**
 - Professional medical website with appointment calls-to-action
@@ -59,15 +59,16 @@ A complete, professional gynecologist clinic website built with modern web techn
 ## 📁 Project Structure
 
 ```
-gynecologist-website/
-├── index.html                    # Main HTML file
-├── styles.css                    # Responsive CSS styling
-├── script.js                     # JavaScript functionality
-├── generate_images.py            # Image generation script
-├── test_website.py               # Testing and benchmarking
-├── SETUP_INSTRUCTIONS.txt        # Detailed setup guide
-├── README.md                     # This file
-└── images/                       # SVG image assets
+dr-kourletakis-website/
+├── index.html                           # Main HTML file
+├── styles.css                           # Responsive CSS styling
+├── script.js                            # JavaScript functionality
+├── generate_images.py                   # Image generation script
+├── test_website.py                      # Testing and benchmarking
+├── SETUP_INSTRUCTIONS.txt               # Detailed setup guide
+├── TESTING_AND_BENCHMARKING.txt         # Testing and benchmarking guide
+├── README.md                            # This file
+└── images/                              # SVG image assets
     ├── logo.svg
     ├── hero-banner.svg
     ├── doctor-profile.svg
@@ -250,8 +251,18 @@ See `SETUP_INSTRUCTIONS.txt` for:
 - Step-by-step installation
 - Multiple execution methods
 - Troubleshooting guide
+
+### Testing, Compilation, and Benchmarking
+See `TESTING_AND_BENCHMARKING.txt` for:
+- Compilation and minification instructions
+- Automated testing procedures
+- Manual testing checklists
 - Performance benchmarking
-- Compilation options
+- Load testing
+- Browser compatibility testing
+- Responsive design testing
+- Accessibility testing
+- Performance optimization tips
 
 ### JavaScript API
 Access clinic data in browser console:
@@ -348,15 +359,15 @@ For issues or questions:
 
 ## 📞 Contact Information
 
-**Clinic Details:**
-- Name: Κλινική Γυναικολογίας
-- Doctor: Δρ. Μαρία Παπαδοπούλου
+**Doctor Details:**
+- Name: Dr. Stylianos Kourletakis
+- Specialty: Γυναικολόγος - Μαιευτήρας
 - Phone: +30 210 123 45 67
 - Email: info@gyneclinic.gr
 - Address: Οδός Ιατρική 123, 151 24, Αθήνα
 - Hours: Mon-Fri 09:00-17:00, Sat 10:00-13:00
 
-**Note:** These are sample values. Update them with actual clinic information.
+**Note:** Phone, email, and address are sample values. Update them with actual contact information.
 
 ## 📋 Changelog
 
