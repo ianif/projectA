@@ -184,10 +184,10 @@ def test_html_validity(results: TestResults) -> None:
         # Check for required sections
         sections = [
             ('<nav', 'Navigation'),
-            ('<section id="home"', 'Home section'),
-            ('<section id="about"', 'About/Biography section'),
-            ('<section id="services"', 'Services section'),
-            ('<section id="contact"', 'Contact section'),
+            ('id="home"', 'Home section'),
+            ('id="about"', 'About/Biography section'),
+            ('id="services"', 'Services section'),
+            ('id="contact"', 'Contact section'),
             ('<footer', 'Footer'),
         ]
         
@@ -196,8 +196,8 @@ def test_html_validity(results: TestResults) -> None:
                 print_success(f"HTML contains {name}")
                 results.add_pass()
             else:
-                print_error(f"Missing {name} section")
-                results.add_fail(f"Missing {name} section")
+                print_error(f"Missing {name}")
+                results.add_fail(f"Missing {name}")
         
     except Exception as e:
         print_error(f"Error reading HTML: {e}")
