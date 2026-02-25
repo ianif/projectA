@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-    <circle cx="100" cy="100" r="95" fill="#e8f1f5" stroke="#16a085" stroke-width="2"/>
-    <path d="M 70 60 Q 70 80 85 90 L 85 130 Q 85 140 75 140 L 65 140 Q 55 140 55 130 L 55 90 Q 70 80 70 60" fill="#0f3460"/>
-    <path d="M 130 60 Q 130 80 115 90 L 115 130 Q 115 140 125 140 L 135 140 Q 145 140 145 130 L 145 90 Q 130 80 130 60" fill="#16a085"/>
-    <circle cx="100" cy="75" r="8" fill="#e8f1f5"/>
-    <text x="100" y="160" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#0f3460">Κολποσκοπία</text>
-</svg>
