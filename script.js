@@ -98,7 +98,7 @@ function isValidEmail(email) {
 // Store Form Submission
 // ===================================
 function storeFormSubmission(data) {
-    let submissions = JSON.parse(localStorage.getItem('formSubmissions')) || [];
+    let submissions = JSON.parse(localStorage.getItem('formSubmissions') || '[]');
     submissions.push(data);
     localStorage.setItem('formSubmissions', JSON.stringify(submissions));
 }
