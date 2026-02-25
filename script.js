@@ -90,7 +90,8 @@ document.addEventListener('DOMContentLoaded', function() {
 // Email Validation
 // ===================================
 function isValidEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    // Improved regex that prevents consecutive dots and validates proper email format
+    const emailRegex = /^[^\s@.][^\s@]*@[^\s@.][^\s@.]*(\.[^\s@.][^\s@.]*)+$/;
     return emailRegex.test(email);
 }
 
